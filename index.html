@@ -6,35 +6,43 @@
   <link rel="stylesheet" href="styles.css">
   <title>smoosh</title>
 </head>
-<body>
-  <section class="showcase">
-    <header>
-      <h2 class="logo">head thing</h2>
-      <div class="toggle"></div>
-    </header>
-    <video src="assets/snowycabin.mp4" muted loop autoplay></video>
-    <div class="overlay"></div>
-    <div class="text">
-      <h2>Lorem Ipsum</h2> 
-      <h3>Lorem Ipsum</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-      <a href="#">button</a>
-    </div>
-    <a href="#">link</a>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Home Page</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="assets/snowycabin.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Hello,</h2> 
+        <h3>And welcome to my website!</h3>
+        <p>You can find my socials and contact information by clicking the button. It should open a popup.</p>
+        <p>And if you wanna check out anything else, click the hamburger menu on the top right of this page!</p>
+        <h4>socials</h4>
+      </div>
 
-    <ul class="social">
-      <li><a href="#"><img src="#"></a></li>
-      <li><a href="#"><img src="#"></a></li>
-      <li><a href="#"><img src="#"></a></li>
-    </ul>
-  </section>
-  <div class="menu">
-    <ul>
-      <li><a href="#">Smoosh</a></li>
-      <li><a href="#">Goobah</a></li>
-      <li><a href="#">A.</a></li>
-    </ul>
-  </div>
+      <ul class="social">
+        <li><a href="#"><img src="#"></a></li>
+        <li><a href="#"><img src="#"></a></li>
+        <li><a href="#"><img src="#"></a></li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Smoosh</a></li>
+        <li><a href="#">Goobah</a></li>
+        <li><a href="#">A.</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+  </body>
+</html>
