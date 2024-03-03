@@ -7,42 +7,55 @@
   <title>smoosh</title>
 </head>
   <body>
-    <section class="showcase">
-      <header>
-        <h2 class="logo">Home Page</h2>
-        <div class="toggle"></div>
-      </header>
+    </div>
+    <section class="maincontent">
+      <div class="header">
+        <h1>Home Page</h1>
+      </div>  
       <video src="assets/snowycabin.mp4" muted loop autoplay></video>
-      <div class="overlay"></div>
-      <div class="text">
-        <h2>Hello,</h2> 
-        <h3>And welcome to my website!</h3>
-        <p>You can find my socials and contact information by clicking the button. It should open a popup.</p>
-        <p>And if you wanna check out anything else, click the hamburger menu on the top right of this page!</p>
-        <h4>socials</h4>
+      <div class="videooverlay"></div>
+      <div class="me">
+        <img src="assets/JamesBondsHavingAStronk.jpg">
       </div>
-
-      <ul class="social">
-        <li><a href="#"><img src="#"></a></li>
-        <li><a href="#"><img src="#"></a></li>
-        <li><a href="#"><img src="#"></a></li>
-      </ul>
+      <div class="text">
+        <h1>Hi.</h1>
+        <h2>You probably don't know me very well. Which is fine.</h2>
+        <h3>That's what this website is for. You can learn a bit more about me from here. Or don't, that's ultimately up to you. Whatever the case.</h3>
+        <h3>First thing you'll probably notice is that I do like the winter aesthetic a lot.</h3>
+      </div>
     </section>
-    <div class="menu">
+    <div class="stolen-flexbox-grids">
+      <div class="column">
+        <h2>Who I am</h2>
+        <br>
+        <img src="assets/skateboardreal.png" 
+          width="200"
+          height="200">
+      </div>
+      <div class="column">
+        <h2>Hobbies</h2>
+        <br>
+        <img src="assets/rook.jpeg"
+          width="200"
+          height="200">
+      </div>
+      <div class="column">
+        <h2>Skills(?)</h2>
+        <br>
+        <img src="assets/VerySkill.png" 
+          width="200"
+          height="200">
+      </div>
+    </div>
+    <div class="footer">
+      <h2>Social Media Accounts:</h2>
       <ul>
-        <li><a href="#">Smoosh</a></li>
-        <li><a href="#">Goobah</a></li>
-        <li><a href="#">A.</a></li>
+        <li><img src="assets/Github.png" alt="github" width="150" height="150"></li>
+        <li><img src="assets/instagram.png" alt="instagram" width="150" height="150"></li>
+        <li><img src="assets/Linkedin.png" alt="linkedin" width="150" height="150"></li>
+        <li><img src="assets/Spotify.png" alt="spotify" width="150" height="150"></li>
+        <li><img src="assets/Youtube.png" alt="youtube" width="150" height="150"></li>
       </ul>
     </div>
-    <script>
-      const menuToggle = document.querySelector('.toggle');
-      const showcase = document.querySelector('.showcase');
-
-      menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        showcase.classList.toggle('active');
-      })
-    </script>
   </body>
 </html>
